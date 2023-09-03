@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="infolain-div fixed" id="infolain">
+        <div class="infosvgdiv">
+            <p class="xmark" style="user-drag: none; user-select: none;" onclick="closeinfo()">&#10006;</p>
+            <section class="infosection">
+                <h2>Information</h2>
+                <p>Website ini di buat oleh Muhammad iqbal ramadhan al faris, bertujuan untuk menyimpan dan menunjukkan draft publik ke pengguna atau client kami. Terimakasih atas kunjungan anda, saya sangat mengapresiasi atas kunjungan anda! anda bisa berpartisipasi untuk memberi saran dan kritik tentang website ini lewat <a href="https://forms.gle/dasKvKk5yugUzgdCA">Forum disini</a>. Saya memohon maaf yang sebesar-besarnya apabila ada salah kata atau tindakan yang tidak senonoh. </p>
+                
+            </section>
+        </div>
+    </div>
+
+    <div class="bagikan-div fixed" id="bagikandiv" ><div class="middle">
+        <div class="link-copy" id="textToCopy"><p id="textToCopy"> https://sites.google.com/view/Farisfile-explorer/home</p></div><i id="folderimg" class="fa fa-copy" aria-hidden="true"></i><a id="copyButton">copy</a>
+    </div>
+</div>
+    <div class="projecttab" id="projecttab">
+
+        <!--Header-->
+        <div class="header" id="header">
+            <p class="three-dots" onclick="showexternal()">&#8942;</p>
+            <div class="dots-div-external" id="divexternal">
+                <p onclick="infolain()">Info lainnya</p>
+                <p onclick="bagikan()">Bagikan</p>
+            </div>
+            <div class="time-div">
+                <span id="dayOfWeek"></span>
+                <h4 id="clock"></h4>
+            </div>
+        </div>
+        <div class="pageproject" id="pageproject">
+            <!--Latest-information-->
+            <section class="latest-container">
+
+                <div class="decoration-svg" id="clickDiv"></div>
+                <div class="information-latest"><img draggable="false" class="svg-image-small" src="https://media.discordapp.net/attachments/1061045909976252497/1145235984561209364/history.png?width=409&height=409" alt=""><p>Latest File added :</p> </div>
+
+                <div class="item" >
+                    <img class="imgdivider" draggable="false" src="https://media.discordapp.net/attachments/1061045909976252497/1142676336599650416/folder_1.png?width=409&height=409" alt="">
+                    <p class="desc"  id="content">Lanyard geometric design pak alfiyan</p>
+                    <p class="date">02/09/2023</p>
+                    <a href="https://drive.google.com/file/d/1R4Bchqid4MRx3f1vuTAB_ZGeSQMYDgEm/view?usp=sharing" class="gdrivelink"><img src="https://media.discordapp.net/attachments/1061045909976252497/1142679791510749184/icons8-google-drive-48.png?width=38&height=38" alt=""></a>
+                </div>
+            </section>
+
+            <!--button page-->
+            <section class="button-pagechanges">
+                <button class="svg-btn2" onclick="pagechange()"><i id="folderimg" class="fa fa-terminal" aria-hidden="true"></i><p  id="Text-folder">File/Download</p></button> <button class="svg-btnTO2" onclick="pagechange()"><p>&#8600;</p></button>
+            </section>
+
+     <!--search bar-->
+     <section class="search-bar">
+        <input type="text" id="searchInput" placeholder="Telusuri File..." onkeyup="searchAndFilter()">
+     </section>
+
+     <div class="bottom-inform"><p>website made with ♥ by Faris. © 2023 All right reserved</p></div>
+
+            <!--files places-->
+
+            <section class="column" id="column">
+            <div class="information-latest"><img draggable="false" class="svg-image-small" src="https://media.discordapp.net/attachments/1061045909976252497/1145327662949220473/info.png?width=409&height=409" alt=""><p>1.06 GB disk used of 15 GB free space</p> </div>
+
+   <div class="flex">
+                <img class="imgdivider" draggable="false" src="https://media.discordapp.net/attachments/1061045909976252497/1142676336599650416/folder_1.png?width=409&height=409" alt="">
+                <p class="desc" id="content">Design lanyard spenido entertainment team smpn 1 sukodono sidoarjo </p>
+                <p class="date">File is corrupted</p>
+            </div>
+
+            <div class="flex">
+                <img class="imgdivider" draggable="false" src="https://media.discordapp.net/attachments/1061045909976252497/1142676336599650416/folder_1.png?width=409&height=409" alt="">
+                <p class="desc"  id="content">Twibbon Hut ke-78 RI by Iqbal Al Faris  </p>
+                <p class="date">12/08/2023</p>
+                <a href="https://drive.google.com/file/d/1e5FoVeRSYZVca98jWRWEYmdd-9gR98Kp/view?usp=drive_link" class="gdrivelink"><img src="https://media.discordapp.net/attachments/1061045909976252497/1142679791510749184/icons8-google-drive-48.png?width=38&height=38" alt=""></a>
+                <a href="https://www.mediafire.com/view/up9x1gmuo3v6o86/TWIBBONHUT.png/file" class="mediafirelink"><img src="https://media.discordapp.net/attachments/1061045909976252497/1142681154907025418/99258_mediafire_icon.png?width=409&height=409" alt=""></a>
+            </div>
+
+            <div class="flex">
+                <img class="imgdivider" draggable="false" src="https://media.discordapp.net/attachments/1061045909976252497/1143121506965139496/icons8-website-48.png?width=38&height=38" alt="">
+                <p class="desc"  id="content">Faris fotocopy official website  </p>
+                <p class="date">20/04/2022</p>
+                <a href="https://sites.google.com/view/farisfotocopy/home" class="gdrivelink"><img src="https://media.discordapp.net/attachments/1061045909976252497/1143121506965139496/icons8-website-48.png?width=38&height=38" alt=""></a>
+            </div>
+
+            <div class="flex">
+                <img class="imgdivider" draggable="false" src="https://media.discordapp.net/attachments/1061045909976252497/1142703179214098462/mp4-file.png?width=409&height=409" alt="">
+                <p class="desc"  id="content">Video Passussaskibra demo ekstrakurikuler 2023  </p>
+                <p class="date">15/07/2023</p>
+                <a href="https://drive.google.com/file/d/1bZ_6tahqSD23NIQ4-zgHpFEL9IPwxjJd/view?usp=sharing" class="gdrivelink"><img src="https://media.discordapp.net/attachments/1061045909976252497/1142679791510749184/icons8-google-drive-48.png?width=38&height=38" alt=""></a>
+                <a href="https://www.mediafire.com/file/d295d5ci46ah05k/PaskibIqbal.mp4/file" class="mediafirelink"><img src="https://media.discordapp.net/attachments/1061045909976252497/1142681154907025418/99258_mediafire_icon.png?width=409&height=409" alt=""></a>
+            </div>
+
+            <div class="flex">
+                <img class="imgdivider" draggable="false" src="https://media.discordapp.net/attachments/1061045909976252497/1142676336599650416/folder_1.png?width=409&height=409" alt="">
+                <p class="desc"  id="content">Twibbon hari kebangkitan nasional 2023 9F spenido  </p>
+                <p class="date">19/05/2023</p>
+                <a href="https://drive.google.com/file/d/1W7IcajYHR7YkNeMupBDpg-MOtvEqupqX/view?usp=drive_link" class="gdrivelink"><img src="https://media.discordapp.net/attachments/1061045909976252497/1142679791510749184/icons8-google-drive-48.png?width=38&height=38" alt=""></a>
+                <a href="https://www.mediafire.com/view/up9x1gmuo3v6o86/TWIBBONHUT.png/file" class="mediafirelink"><img src="https://media.discordapp.net/attachments/1061045909976252497/1142681154907025418/99258_mediafire_icon.png?width=409&height=409" alt=""></a>
+            </div>
+
+            <div class="flex">
+                <img class="imgdivider" draggable="false" src="https://media.discordapp.net/attachments/1061045909976252497/1142703179214098462/mp4-file.png?width=409&height=409" alt="">
+                <p class="desc"  id="content">Indriya (tugas drama video bahasa indonesia) 2023  </p>
+                <p class="date">11/06/2023</p>
+                <a href="https://drive.google.com/file/d/1_I14RIoPuFXnoNvWOSwEcQ6klHTKWggR/view?usp=sharing" class="gdrivelink"><img src="https://media.discordapp.net/attachments/1061045909976252497/1142679791510749184/icons8-google-drive-48.png?width=38&height=38" alt=""></a>
+            </div>
+
+            <div class="flex" >
+                <img class="imgdivider" draggable="false" src="https://media.discordapp.net/attachments/1061045909976252497/1142676336599650416/folder_1.png?width=409&height=409" alt="">
+                <p class="desc"  id="content">Poster lomba 17 agustus 2023 by iqbal baaqir & iqbal ramadhan al faris</p>
+                <p class="date">17/08/2023</p>
+                <a href="https://drive.google.com/file/d/1PJAyP8dxHTK6Wipt9wvvtsceg2_yAnfj/view?usp=drive_link" class="gdrivelink"><img src="https://media.discordapp.net/attachments/1061045909976252497/1142679791510749184/icons8-google-drive-48.png?width=38&height=38" alt=""></a>
+                <a href="https://www.mediafire.com/view/r7c1x9acbdg45q3/TES.jpg/file" class="mediafirelink"><img src="https://media.discordapp.net/attachments/1061045909976252497/1142681154907025418/99258_mediafire_icon.png?width=409&height=409" alt=""></a>
+            </div>
+
+            <div class="flex">
+                <img class="imgdivider" draggable="false" src="https://media.discordapp.net/attachments/1061045909976252497/1142676336599650416/folder_1.png?width=409&height=409" alt="">
+                <p class="desc"  id="content">icon game candy tycoon roblox studio Obj.jpeg</p>
+                <p class="date">26/06/2023</p>
+                <a href="https://drive.google.com/file/d/1yo-j6g418rv2rRRoMNtwp-IieSBIel0k/view?usp=drive_link" class="gdrivelink"><img src="https://media.discordapp.net/attachments/1061045909976252497/1142679791510749184/icons8-google-drive-48.png?width=38&height=38" alt=""></a>
+            </div>
+
+            <div class="flex">
+                <img class="imgdivider" draggable="false" src="https://media.discordapp.net/attachments/1061045909976252497/1143120832802078843/docx-extension.png?width=409&height=409" alt="">
+                <p class="desc"  id="content">File document ODL bali dokumentasi .docx </p>
+                <p class="date">no access</p>
+            </div>
+
+            <div class="flex">
+                <img class="imgdivider" draggable="false" src="https://media.discordapp.net/attachments/1061045909976252497/1143120832802078843/docx-extension.png?width=409&height=409" alt="">
+                <p class="desc"  id="content">File document ODL jogjakarta dokumentasi .docx </p>
+                <p class="date">File is corrupted</p>
+            </div>
+
+            <div class="flex">
+                <img class="imgdivider" draggable="false" src="https://media.discordapp.net/attachments/1061045909976252497/1142676336599650416/folder_1.png?width=409&height=409" alt="">
+                <p class="desc"  id="content">Design lanyard baru 2023 smpn1 sukodono versi (1)</p>
+                <p class="date">26/08/2023</p>
+                <a href="https://drive.google.com/file/d/1KnBXQm5wjvhTtTPyRhEmKQY6PQ0DzV6P/view?usp=sharing" class="gdrivelink"><img src="https://media.discordapp.net/attachments/1061045909976252497/1142679791510749184/icons8-google-drive-48.png?width=38&height=38" alt=""></a>
+            </div>
+
+            <div class="flex" >
+                <img class="imgdivider" draggable="false" src="https://media.discordapp.net/attachments/1061045909976252497/1142676336599650416/folder_1.png?width=409&height=409" alt="">
+                <p class="desc"  id="content">Design lanyard baru 2023 smpn1 sukodono versi (2)</p>
+                <p class="date">26/08/2023</p>
+                <a href="https://drive.google.com/file/d/1pVy1lC8uGwY3HFk6rmRNYy4-XBMksRDN/view?usp=sharing" class="gdrivelink"><img src="https://media.discordapp.net/attachments/1061045909976252497/1142679791510749184/icons8-google-drive-48.png?width=38&height=38" alt=""></a>
+            </div>
+
+            <div class="flex">
+                <img class="imgdivider" draggable="false" src="https://media.discordapp.net/attachments/1061045909976252497/1142703179214098462/mp4-file.png?width=409&height=409" alt="">
+                <p class="desc"  id="content">Tugas video entertainment 30 detik lingkup sekolah 2023</p>
+                <p class="date">27/08/2023</p>
+                <a href="https://drive.google.com/file/d/1xJbAyK_aHWqW3SllPkO34FoWaKYuB07o/view?usp=sharing" class="gdrivelink"><img src="https://media.discordapp.net/attachments/1061045909976252497/1142679791510749184/icons8-google-drive-48.png?width=38&height=38" alt=""></a>
+            </div>
+
+            <div class="flex" >
+                <img class="imgdivider" draggable="false" src="https://media.discordapp.net/attachments/1061045909976252497/1142676336599650416/folder_1.png?width=409&height=409" alt="">
+                <p class="desc"  id="content">Lanyard geometric design pak alfiyan</p>
+                <p class="date">02/09/2023</p>
+                <a href="https://drive.google.com/file/d/1R4Bchqid4MRx3f1vuTAB_ZGeSQMYDgEm/view?usp=sharing" class="gdrivelink"><img src="https://media.discordapp.net/attachments/1061045909976252497/1142679791510749184/icons8-google-drive-48.png?width=38&height=38" alt=""></a>
+            </div>
+            </section>
+
+            <section class="folder" id="folder">
+                <section class="loading-page" id="loading-page">
+                    <div class="block"></div>
+                    <div class="line-linear">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </section>
+
+                <section class="folderpage" id="folderpage">
+                    <form action="https://www.google.com/search" method="GET">
+                        <input type="text" name="q" placeholder="Search Google" class="searchbar-google">
+                        <input type="submit" value="Search" class="submit-google">
+                    </form>
+                    <div class="tags">
+                        <a onclick="toggleContent('content1')"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;ViewMods</a>
+                        <a onclick="toggleContent('content2')"><i class="fa fa-wrench" aria-hidden="true"></i>&nbsp;Tools</a>
+                        <a onclick="toggleContent('content3')"><i class="fa fa-code" aria-hidden="true"></i>&nbsp;Open source</a>
+                      </div>
+                      <div id="errorhtml"><h1>Choose one of the tags!</h1></div>
+
+                      <div id="content1" class="content">
+                        <div></div>
+                      </div>
+                      
+                      <div id="content2" class="content">
+                      </div>
+                      
+                      <div id="content3" class="content">
+                        <div class="flex" >
+                            <img class="imgdivider" draggable="false" src="https://media.discordapp.net/attachments/1061045909976252497/1147691253945860116/programming-code-signs.png?width=409&height=409" alt="">
+                            <p class="desc"  id="content">null</p>
+                            <p class="date">No access</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+        </div>
+    </div>
+    <script>
+
+function closeinfo() {
+            document.getElementById("infolain").style.display = "none"
+        }
+
+function infolain() {
+            document.getElementById("infolain").style.display = "block"
+            document.getElementById("divexternal").style.display = "none"
+        }
+
+document.getElementById("copyButton").addEventListener("click", function() {
+            var textToCopy = document.getElementById("textToCopy");
+            var text = textToCopy.textContent;
+
+            // Create a temporary input element
+            var input = document.createElement("input");
+            input.setAttribute("value", text);
+            document.body.appendChild(input);
+
+            // Select the text in the input element
+            input.select();
+
+            // Copy the selected text to the clipboard
+            document.execCommand("copy");
+
+            // Remove the temporary input element
+            document.body.removeChild(input);
+
+            document.getElementById("copyButton").innerText = "Copied!"
+            setTimeout(function()  {
+                document.getElementById("copyButton").innerText = "copy"
+                document.getElementById("bagikandiv").style.display = "none"
+            }, 1000);
+        });
+
+        function bagikan() {
+            document.getElementById("bagikandiv").style.display = "block"
+            document.getElementById("divexternal").style.display = "none"
+        }
+
+        function showexternal() {
+            var external = document.getElementById("divexternal");
+            if (external.style.display === "none") {
+                external.style.display = "block"
+            } else {
+                external.style.display = "none"
+            }
+        }
+
+            function searchAndFilter() {
+        var searchText = document.getElementById("searchInput").value.toLowerCase();
+        var contentBlocks = document.getElementsByClassName("flex");
+
+        for (var i = 0; i < contentBlocks.length; i++) {
+            var content = contentBlocks[i].textContent.toLowerCase();
+            if (content.includes(searchText)) {
+                contentBlocks[i].style.display = "flex";
+                highlightMatches(contentBlocks[i], searchText);
+            } else {
+                contentBlocks[i].style.display = "none";
+            }
+        }
+    }
+
+    function highlightMatches(contentBlock, searchText) {
+        var content = contentBlock.querySelector(".desc").textContent;
+        var updatedContent = content.replace(/<\/?span[^>]*>/g, ""); // Remove previous highlights
+        var highlightedContent = updatedContent.replace(new RegExp(searchText, "gi"), match => `<span class="highlight">${match}</span>`);
+        contentBlock.querySelector(".desc").innerHTML = highlightedContent;
+    }
+
+    
+    const clickDiv = document.getElementById('clickDiv');
+  let isSlid = false;
+
+  var page = document.getElementById("pageproject");
+  var header = document.getElementById("header")
+  clickDiv.addEventListener('click', () => {
+    if (isSlid) {
+        header.style.backgroundColor = "rgb(255, 255, 255)"
+      page.style.transform = 'translateY(0)';
+      clickDiv.style.transform = 'translateY(0)';
+      clickDiv.style.backgroundColor = "rgb(175, 175, 175)"
+    } else {
+      page.style.transform = 'translateY(-180px)';
+      header.style.backgroundColor = "rgb(190, 190, 190)";
+      clickDiv.style.transform = 'translateY(-24px)';
+      clickDiv.style.backgroundColor = "white"
+    }
+    isSlid = !isSlid;
+  });
+
+function pagechange() {
+    var file = document.getElementById("column");
+    var folder = document.getElementById("folder");
+    var text = document.getElementById("Text-folder");
+    if(file.style.display === "block") {
+        folder.style.display = "block"
+        file.style.display = "none"
+        text.innerText = "File/Pages"
+    } else {
+        folder.style.display = "none"
+        file.style.display = "block"
+        text.innerText = "File/Download"
+    }
+}
+
+
+function showMainSection() {
+      document.getElementById("loading-page").style.display = "none";
+      document.getElementById("folderpage").style.display = "block";
+      document.getElementById("folder").style.height = "121px"
+    }
+
+    // Show main section after a delay of 1.5 seconds
+    setTimeout(showMainSection, 5000);
+
+
+    const daysOfWeek = [
+    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+  ];
+
+  const currentDay = new Date().getDay();
+  document.getElementById("dayOfWeek").textContent = daysOfWeek[currentDay];
+
+  function updateClock() {
+  const now = new Date();
+  const hours = now.getHours();
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+  const formattedHours = (hours % 12 || 12).toString().padStart(2, '0');
+  const minutes = now.getMinutes().toString().padStart(2, '0');
+  const seconds = now.getSeconds().toString().padStart(2, '0');
+  const timeText = `${formattedHours}:${minutes}:${seconds} ${ampm}`;
+  document.getElementById('clock').textContent = timeText;
+}
+
+// Initial call to update the clock immediately
+updateClock();
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+
+function toggleContent(contentId) {
+  var content = document.getElementById(contentId);
+  var contents = document.querySelectorAll('.content');
+  var errorhtml = document.getElementById("errorhtml")
+  
+  for (var i = 0; i < contents.length; i++) {
+    if (contents[i] === content) {
+      if (content.style.display === 'none') {
+        errorhtml.style.display = "none"
+        content.style.display = 'block';
+      } else {
+        errorhtml.style.display = "block"
+        content.style.display = 'none';
+      }
+    } else {
+      contents[i].style.display = 'none';
+    }
+  }
+}
+    </script>
+</body>
+</html>
